@@ -1,0 +1,33 @@
+<!-- carcanvas -car simulation
+     network canvas - network visualization --> 
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Self-driving Car Simulation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="simulation-panel">
+            <canvas id="carCanvas"></canvas>
+            <div class="controls">
+                <button onclick="save()">Save Model</button>
+                <button onclick="discard()">Reset Model</button>
+            </div>
+        </div>
+        <div class="network-panel">
+            <canvas id="networkCanvas"></canvas>
+        </div>
+    </div>
+    <script src="visualizer.js"></script>
+    <script src="network.js"></script>
+    <script src="sensor.js"></script>
+    <script src="utils.js"></script>
+    <script src="road.js"></script>
+    <script src="controls.js"></script>
+    <script src="car.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
